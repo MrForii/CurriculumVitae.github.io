@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+.container .left-side {
+    position: relative;
+    background-color: #545454;
+    padding: 40px;
+}
+
+.profile-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.profile-text .img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.profile-text .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2 {
+    color: #fefefe;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile-text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contact {
+    padding-top: 40px;
+    
+}
+
+.contact a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+
+.title {
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul {
+    position: relative;
+}
+
+.contact ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact ul li  .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+}
+
+.contact ul li  .text{
+    color: #fefefe;
+    font-weight: 300;
+}
+
+.contact.education li {
+    margin-bottom: 15px;
+}
+
+.contact.education h5 {
+    color: #fefefe;
+    font-weight: 400;
+}
+
+.contact.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact.education h4 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.contact.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: grey ;
+    display: block;
+    margin-top: 5px;
+}
+.contact.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: green;
+}
+
+.container .rigth-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #e1e1e1;
+    padding: 40px;
+}
+
+.about-me {
+    margin-bottom: 50px;
+}
+
+.about-me:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #61625D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    color: #333;
+}
+
+.about-me .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about-me .box .year-company {
+    min-width: 150px;
+}
+
+.about-me .box .year-company h5 {
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.about-me .box .text h4 {
+    text-transform: uppercase;
+    color: #61625D;
+    font-size: 16px;
+}
+
+.skills {
+    width: 100%;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: green;
+}
+
+
+.hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+.hobbies ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hobbies ul li .bi {
+    color: #61625D;
+}
+
+.hobbies a {
+    text-decoration: none;
+    color: #545454;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hobbies ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about-me .box {
+        flex-direction: column;
+    }
+    .about-me .box .year-company {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .hobbies ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
